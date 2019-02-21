@@ -16,18 +16,13 @@ public class Money {
 	
 
 	public Money add(Money money) {
-		//amount = amount + money.amount;
+	
 		return new Money(amount+money.amount);
-		//return this;
+	
 	}
 
 	public Money minus(Money money) {
-		/*
-		 * System.out.println(amount+"**"+money.amount);
-		 * 
-		 * amount = amount - money.amount; return this;
-		 */
-		
+	
 		return new Money(amount-money.amount);
 	}
 
@@ -39,10 +34,6 @@ public class Money {
 		return new Money(amount/money.amount);
 	}
 	
-
-	/*
-	 * @Override public int hashCode() { return amount; }
-	 */
 
 	@Override
 	public boolean equals(Object obj) {
